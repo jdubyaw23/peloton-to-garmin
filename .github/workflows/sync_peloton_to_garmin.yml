@@ -41,6 +41,19 @@ jobs:
             "SaveLocalCopy": ${{ github.event.inputs.saveLocalCopy || false }},
             "IncludeTimeInHRZones": false,
             "IncludeTimeInPowerZones": false
+            "DeviceInfoSettings": {
+              "none": {
+                  "name": "Forerunner 265",
+                  "unitId": 3484185464,
+                  "productID": 4257,
+                  "manufacturerId": 1,
+                  "version": {
+                      "versionMajor": 20,
+                      "versionMinor": 29,
+                      "buildMajor": 0,
+                      "buildMinor": 0
+                  }
+              },
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
