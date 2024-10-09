@@ -54,6 +54,7 @@ jobs:
                       "buildMinor": 0
                   }
               }
+            }
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
