@@ -40,7 +40,7 @@ jobs:
             "Tcx": false,
             "SaveLocalCopy": ${{ github.event.inputs.saveLocalCopy || false }},
             "IncludeTimeInHRZones": false,
-            "IncludeTimeInPowerZones": false
+            "IncludeTimeInPowerZones": false,
             "DeviceInfoSettings": {
               "none": {
                   "name": "Forerunner 265",
@@ -53,7 +53,7 @@ jobs:
                       "buildMajor": 0,
                       "buildMinor": 0
                   }
-              },
+              }
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
